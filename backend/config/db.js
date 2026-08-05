@@ -17,5 +17,5 @@ export default function connectDB() {
   dbConnection.on('error', (err) => {
     console.error(`connection error: ${MONGODB_URI}`);
   });
-  return;
+  //return;
 }
