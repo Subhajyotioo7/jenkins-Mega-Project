@@ -12,11 +12,11 @@ resource "aws_security_group" "allow_user_to_connect" {
   description = "Allow user to connect"
   vpc_id      = aws_default_vpc.default.id
   ingress {
-    description = "port 22 allow"
-    from_port   = 22
-    to_port     = 22
+    description = "port 80 allow" //2
+    from_port   = 80 //22
+    to_port     = 80  //22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    //cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
